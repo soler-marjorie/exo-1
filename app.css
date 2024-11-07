@@ -7,3 +7,7 @@ body{
     background-color: chartreuse;
     color: black;
 }
+
+img{
+    width: 400px;
+}
