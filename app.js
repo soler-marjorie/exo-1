@@ -146,3 +146,26 @@ async function afficherChuck() {
 }
 
 btnChuck.addEventListener('click', afficherChuck);
+
+/*
+Exo 12 : 
+dans la page web mettre en place un système de Dark Chartreuse Mode
+on click sur un bouton cela change le look de la page ambiance chartreuse 
+de fait on peut rajouter du contenu HTML du h1, des img, des <p>  
+*/
+
+//Exercice 12 -----------------------------------------------------
+const phraseC = document.createElement('p');
+phraseC.textContent = 'Trop mal au yeux ?';
+
+document.body.appendChild(phraseC);
+
+
+let charMode = document.createElement('button');
+document.body.appendChild(charMode);
+charMode.innerHTML = "Dark mode";
+
+charMode.addEventListener("click", function(){
+    let e = document.body;
+    e.classList.toggle("dark-mode");
+})
